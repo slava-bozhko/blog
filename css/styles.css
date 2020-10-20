@@ -60,19 +60,20 @@ p{
     top: 0%;
     left: 0%;
     transform: translate(0%, 0%); 
-    width: 100%; 
+    min-width: 100%;
+    min-height: 100%; 
     margin: 0px;
     transition: transform .3s ease-in;
 }
 
-.post__img::before {
+.post__img::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    z-index: 2;
+    /* z-index: 2; */
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%);
     transition: all 0.3s ease-in;
     
